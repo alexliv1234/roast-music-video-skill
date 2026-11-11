@@ -1,0 +1,5 @@
+id,start,end,section,type,setup,lyric,clip_id,reuse_of,clip_in,plate,onscreen_text_ids,subject_reaction,notes
+S001,0.0,2.5,intro,code,title,,,,,K_TITLE,T001,,title card drawn in code on a plate
+S002,2.5,5.0,verse,gen,desk,sam never met a deadline,C01,,0.0,,T002 T003,Y,has a real clip
+S003,5.0,7.5,verse,gen,desk,final final v2,C02,,0.0,,T004,,no clip: falls back to the keyframe with a slow push-in
+S004,7.5,10.0,chorus,gen,desk,busted,C03,,0.0,,T005 T006,Y,has a clip and a keyframe

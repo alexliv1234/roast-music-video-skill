@@ -1,0 +1,9 @@
+id,start,end,text,style,where,shot_id,source
+T001,0.3,2.3,THE SAM SHOW,card,title,S001,invented for the example
+T002,2.7,4.9,Sam has never met a deadline he liked,caption,,S002,invented for the example
+T003,3.0,4.6,SAM: guest of honour,namecard,,S002,invented for the example
+T004,5.2,7.3,Sam names every file final_final_v2,caption,,S003,invented for the example
+T005,7.7,9.0,BUSTED,hook,,S004,invented for the example
+T006,7.9,9.9,ok but did you check the logs,bubble,right,S004,invented for the example
+T007,0.5,2.2,PILOT EPISODE,tag,left,S001,invented for the example
+T008,9.1,9.9,THE END,end,low,S004,invented for the example

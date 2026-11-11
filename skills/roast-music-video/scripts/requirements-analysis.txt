@@ -1,0 +1,7 @@
+# analyze_song.py beat grid and section guesses (optional: or write analysis/grid.json by hand)
+#   python -m pip install -r "$SKILL_SCRIPTS/requirements-analysis.txt"
+librosa
+soundfile
+# analyze_song.py --words (optional, install ONE of these; or write analysis/words.json by hand, or skip word timings)
+# faster-whisper
+# openai-whisper

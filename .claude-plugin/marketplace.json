@@ -1,0 +1,14 @@
+{
+  "name": "roast-music-video",
+  "description": "Research your own AI chat history and make a sourced, consenting roast music video about you.",
+  "owner": {
+    "name": "roast-music-video-skill contributors"
+  },
+  "plugins": [
+    {
+      "name": "roast-music-video",
+      "source": "./",
+      "description": "Research your own AI chat history and make a sourced, consenting roast music video about you."
+    }
+  ]
+}

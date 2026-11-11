@@ -1,0 +1,81 @@
+{
+  "name": "my-film",
+  "subject": "",
+  "consent": { "given": false, "evidence": "" },
+  "audience": "",
+  "off_limits": [],
+  "budget": { "total": 0, "currency": "credits", "reserve": 0, "retake_cap": 0 },
+  "duration": 180.0,
+  "allow_trim": false,
+  "fps": 24,
+  "size": [1280, 720],
+  "song": "audio/song_master",
+  "dirs": { "footage": "footage/final", "frames": "frames", "out": "out", "audio": "audio" },
+  "shots_csv": "shots.csv",
+  "strings_csv": "strings.csv",
+  "palette": {
+    "ink": "#14141A",
+    "paper": "#F5F1E8",
+    "accent": "#FFC845",
+    "accent2": "#E8486B",
+    "panel": "#1F4E79"
+  },
+  "fonts": {
+    "display": "fonts/YourDisplayFont-Bold.ttf",
+    "body": "fonts/YourBodyFont-Regular.ttf",
+    "mono": ""
+  },
+  "retime": 0.98,
+  "safe_margin": 0.05,
+  "min_cap_px": 28,
+  "min_hold": 1.0,
+  "loudness": { "target_lufs": -14.0, "true_peak": -1.5, "lra": 11 },
+  "text": {
+    "caption_size": 46,
+    "caption_bottom": 0.922,
+    "caption_max_width": 0.81,
+    "tag_size": 40,
+    "namecard_bottom": 0.72,
+    "namecard_name_size": 46,
+    "namecard_role_size": 40,
+    "hook_size": 150,
+    "hook_center": [0.5, 0.44],
+    "hook_angle": 3.0,
+    "bubble_size": 40,
+    "bubble_max_width": 0.42,
+    "title_size": 110,
+    "card_size": 80,
+    "end_size": 110
+  },
+  "banned_terms": [],
+  "providers": {
+    "song": {
+      "name": "any song generator or your own recording",
+      "mode": "manual",
+      "notes": "Generate or record the song anywhere, export mp3 or wav, save it as audio/song_master.mp3."
+    },
+    "transcription": {
+      "name": "local whisper (analyze_song.py --words), or none",
+      "mode": "cli",
+      "notes": "Optional. Set mode to none to skip it and set string times by ear from the beat grid."
+    },
+    "images": {
+      "name": "any image generator or hand-made art",
+      "mode": "manual",
+      "notes": "Save each keyframe as frames/k_<clip_id>.png at 1920x1080 or larger. Stills alone build a full animatic."
+    },
+    "video": {
+      "name": "any image-to-video tool, or none",
+      "mode": "none",
+      "notes": "Optional. Save clips as footage/final/<clip_id>_v1.mp4. Shots without a clip use their keyframe with a slow push-in."
+    }
+  },
+  "_comments": [
+    "Every key is optional except as noted in the README; missing keys take the defaults in common.py.",
+    "subject, consent, audience, off_limits and budget are metadata for the agent gates and reviewers; no script reads them except to check their types. consent.given stays false until the subject has agreed.",
+    "duration must equal the song's real length (within 0.25 s). allow_trim: true lets a LONGER song be cut to duration on purpose.",
+    "Sizes under `text` are reference values at 720p high and are scaled to the frame height. The defaults pass the 28 px minimum cap height with the Arial or DejaVu fallback.",
+    "providers is read for messages only. No script ever calls a provider. mode is one of mcp, cli, manual, none. Roles: song, transcription, images, video.",
+    "fonts: point at .ttf files you are licensed to use. Empty or missing falls back to a system font with a warning."
+  ]
+}

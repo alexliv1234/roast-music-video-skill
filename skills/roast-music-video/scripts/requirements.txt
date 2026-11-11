@@ -1,0 +1,8 @@
+# core pipeline: plan, base, burn, qa, validate_assets, contact_sheet, collect_sessions (Python 3.10+)
+#   python -m pip install -r "$SKILL_SCRIPTS/requirements.txt"
+numpy
+Pillow
+opencv-python
+# system tools on PATH, not installable with pip: ffmpeg and ffprobe
+#
+# analysis (analyze_song.py) is in requirements-analysis.txt; it is optional because you can write analysis/grid.json by hand

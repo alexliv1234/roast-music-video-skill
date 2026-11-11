@@ -1,0 +1,27 @@
+{
+  "name": "sam-example",
+  "subject": "Sam (fictional, invented for this example)",
+  "consent": { "given": true, "evidence": "fictional character, nobody to ask" },
+  "audience": "people running the example",
+  "off_limits": [],
+  "budget": { "total": 0, "currency": "credits", "reserve": 0, "retake_cap": 0 },
+  "duration": 10.0,
+  "fps": 24,
+  "size": [640, 360],
+  "song": "audio/song_master",
+  "palette": {
+    "ink": "#14141A",
+    "paper": "#F5F1E8",
+    "accent": "#FFC845",
+    "accent2": "#E8486B",
+    "panel": "#1F4E79"
+  },
+  "fonts": { "display": "", "body": "", "mono": "" },
+  "banned_terms": ["Acme Corp"],
+  "providers": {
+    "song": { "name": "ffmpeg sine tone", "mode": "cli", "notes": "Synthetic 10 s tone made by make_assets.py." },
+    "transcription": { "name": "none", "mode": "none", "notes": "Not needed for the example." },
+    "images": { "name": "Pillow solid colours", "mode": "cli", "notes": "Keyframes drawn by make_assets.py." },
+    "video": { "name": "ffmpeg noise clips", "mode": "cli", "notes": "Two shots have a clip; one shot has only a keyframe and falls back to a slow push-in." }
+  }
+}
